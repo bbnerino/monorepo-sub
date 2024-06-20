@@ -1,6 +1,12 @@
 import React from "react";
 
-const Button = ({ text, onClick, ...props }: any) => {
+type ButtonProps = {
+  text: string;
+  onClick: () => void;
+  style?: React.CSSProperties;
+};
+
+const Button = ({ text, onClick, ...props }: ButtonProps) => {
   return (
     <button
       style={{
