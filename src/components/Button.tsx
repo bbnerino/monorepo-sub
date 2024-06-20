@@ -1,12 +1,12 @@
 import React from "react";
 
 type ButtonProps = {
-  text: string;
+  children: string;
   onClick: () => void;
   style?: React.CSSProperties;
 };
 
-const Button = ({ text, onClick, ...props }: ButtonProps) => {
+const Button = ({ children, onClick, ...props }: ButtonProps) => {
   return (
     <button
       style={{
@@ -20,7 +20,7 @@ const Button = ({ text, onClick, ...props }: ButtonProps) => {
       }}
       onClick={onClick}
     >
-      {text}
+      {children}
     </button>
   );
 };
