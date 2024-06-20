@@ -15,6 +15,7 @@ const Button = ({ text, onClick, ...props }: ButtonProps) => {
         borderRadius: 8,
         backgroundColor: "yellowgreen",
         color: "tomato",
+        height: "50px",
         ...props.style,
       }}
       onClick={onClick}
