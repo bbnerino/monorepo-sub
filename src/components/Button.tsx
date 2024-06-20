@@ -14,8 +14,7 @@ const Button = ({ children, onClick, ...props }: ButtonProps) => {
         padding: "15px 20px",
         borderRadius: 8,
         backgroundColor: "yellowgreen",
-        color: "tomato",
-        height: "50px",
+        color: "blue",
         ...props.style,
       }}
       onClick={onClick}
